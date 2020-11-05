@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view"
+      android:id="@+id/nav_view"
+    >
+    <group android:checkableBehavior="single">
+
+        <item android:title="Company info">
+            <menu>
+                <item
+                    android:id="@+id/nav_About"
+                    android:title="About"
+                    android:icon="@drawable/ic_about"
+                    />
+                <item
+                    android:id="@+id/nav_contactUs"
+                    android:title="Contact Us"
+                    android:icon="@drawable/ic_contact_us"
+                    />
+                <item
+                    android:id="@+id/nav_findUs"
+                    android:title="Find Us"
+                    android:icon="@drawable/ic_location"
+                    />
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="News">
+            <menu>
+                <item
+                    android:id="@+id/nav_Offers"
+                    android:title="Offers"
+                    android:icon="@drawable/ic_gift"
+                    />
+                <item
+                    android:id="@+id/nav_Events"
+                    android:title="Events"
+                    android:icon="@drawable/ic_calendar"
+                    />
+            </menu>
+        </item>
+    </group>
+
+</menu>

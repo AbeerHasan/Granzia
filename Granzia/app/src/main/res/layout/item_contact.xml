@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/contact_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        app:contentPadding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="#DEDEDE"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="95"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contactName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contactPhone"
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="0"
+                    android:singleLine="true"
+                    android:text="00000000000"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/callButt"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:background="@mipmap/ic_make_phone_call" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    />
+</LinearLayout>

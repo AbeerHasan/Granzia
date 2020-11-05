@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "363108694011",
+    "firebase_url": "https://granziaegypt.firebaseio.com",
+    "project_id": "granziaegypt",
+    "storage_bucket": "granziaegypt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363108694011:android:59282be931fdcca1",
+        "android_client_info": {
+          "package_name": "com.example.dell.granziaegypt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363108694011-6piae686ud1s2hq37e7c61tpnaeq1mj2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.granziaegypt",
+            "certificate_hash": "e341107b4620369a39284e8e9c0316a655bc6562"
+          }
+        },
+        {
+          "client_id": "363108694011-fskffhisfqnci0802380oinrck706cs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrn_qakM5F1JMyoBGidaEam7G3r6aAW_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363108694011-fskffhisfqnci0802380oinrck706cs7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363108694011:android:47a3fb7900c2e0b5",
+        "android_client_info": {
+          "package_name": "com.example.granzia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363108694011-kar5quke7q82u3uj7ghpcdfjg76bd7ih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.granzia",
+            "certificate_hash": "e341107b4620369a39284e8e9c0316a655bc6562"
+          }
+        },
+        {
+          "client_id": "363108694011-00gea7s2pjh5j82p8m5tekdnt4tfevo4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.granzia",
+            "certificate_hash": "cefe5978a9ff6c3e7323e74b14eb643cbf0fec15"
+          }
+        },
+        {
+          "client_id": "363108694011-fskffhisfqnci0802380oinrck706cs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrn_qakM5F1JMyoBGidaEam7G3r6aAW_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363108694011-fskffhisfqnci0802380oinrck706cs7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
