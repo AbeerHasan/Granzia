@@ -1,2 +1,2 @@
 # Granzia
-E-commerce app made using IOS Swift
+E-commerce app made using android/ java
