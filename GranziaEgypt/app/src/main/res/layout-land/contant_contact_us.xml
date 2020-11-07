@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="@layout/activity_contact_us"
+        >
+    <include layout="@layout/_toolbar_main"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:background="@drawable/contact_head"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:gravity="center"
+                    android:text="Call Us and know more about our services"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    />
+
+                <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/trans"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:padding="5dp"
+                            android:text="Customer Service"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/CustomerService_Recycl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            tools:itemCount="2"
+                            tools:listitem="@layout/item_contact" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/trans"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:padding="5dp"
+                            android:text="Distributers"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/Distributor_Recycl"
+                            android:layout_width="match_parent"
+                            android:layout_height="176dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            tools:itemCount="2"
+                            tools:listitem="@layout/item_contact" />
+                    </LinearLayout>
+                </ScrollView>
+
+        </LinearLayout>
+
+    <include
+        layout="@layout/_back_button_main"
+        />
+    </android.support.design.widget.CoordinatorLayout>

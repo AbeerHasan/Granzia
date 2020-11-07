@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Granzia Egypt</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Granzia Egypt</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_products">Products</string>
+    <string name="Exit">Exit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="AboutContent">"Granze Egypt is an Italian medical equipment company that sells high quality medical devices worldwide with the best prices and services."</string>
+    <string name="title_activity_location">Map</string>
+    <string name="about">About</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="find_us">Find Us</string>
+    <string name="offers">Offers</string>
+    <string name="events">Events</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

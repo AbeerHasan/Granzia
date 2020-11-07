@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    >
+    <include layout="@layout/_toolbar_main"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/productPic"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:adjustViewBounds="true"
+            android:background="#FFF"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/productEnsurence"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Ensurence"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:fontFamily="@font/average_sans"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Bink"
+                android:gravity="center"
+                android:text="Price"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:fontFamily="@font/average_sans"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Featurs"
+            android:textColor="@color/colorButtonPrimaryDarkest"
+            android:textSize="20sp"
+            />
+        <ListView
+            android:id="@+id/productFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:listitem="@layout/item_product_features"></ListView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="5dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Product Name"
+        android:textColor="@color/colorButtonPrimaryDarkest"
+        android:textSize="20sp"/>
+    <include
+        layout="@layout/_back_button_main"
+        />
+    </android.support.design.widget.CoordinatorLayout>

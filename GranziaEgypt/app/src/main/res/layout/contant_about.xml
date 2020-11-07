@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+    <include layout="@layout/_toolbar_main"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        />
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="?attr/actionBarSize"
+         android:weightSum="100"
+         android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:background="@drawable/home_head_background"
+            >
+            <TextView
+                android:id="@+id/aboutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:text="Granze Egypt is an Italian medical equipment company that sells high quality medical devices worldwide with the best prices and services."
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:background="@drawable/tranc"
+                app:fontFamily="@font/galada" />
+        </FrameLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_weight="40"
+            android:adjustViewBounds="true" >
+            <ViewFlipper
+                android:id="@+id/eventsPicsFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ViewFlipper>
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook_icon"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_margin="5dp"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_markers"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <include
+        layout="@layout/_back_button_main"
+        />
+    </android.support.design.widget.CoordinatorLayout>
